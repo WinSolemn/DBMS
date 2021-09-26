@@ -1,0 +1,28 @@
+--> Create table
+Create table tablename
+(columnname datatype (size),
+columnname datatype (size));
+
+--> Insert table
+Insert into tablename
+(columnname1,columnname2...)
+values(expresssion,expression);
+
+--> Select table
+select * from employee;
+
+Note-:     * -->  for all
+
+Example-:
+
+create table employee
+(
+e_name char(10),
+e_id varchar(10),
+e_salary number(10));
+insert into employee
+values ("Akash","X",100000000000000);
+insert into employee
+values ("Rahul","Y",100000000000000);
+SELECT e_name,e_id,e_salary from employee;
+SELECT * from employee;      ( * --> for all)
